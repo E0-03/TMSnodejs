@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title MyBank - Email
+  body
+    h1 MyBank - Email
+    if email
+      p Your current email is: #{email}
+    else
+      p No email found
+    hr
+    h2 Change Email
+    a(href='/change-email') Change Email
+    hr
+    p
+      a(href='/logout') Logout
+      a(href='/') Back to Home

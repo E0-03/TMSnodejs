@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title MyBank - Change Email
+  body
+    h1 MyBank - Change Email
+    form(action='/update-email' method='POST')
+      label(for='newEmail') New Email:
+      input(type='email' id='newEmail' name='email' required)
+      button(type='submit') Update Email
+    hr
+    p
+      a(href='/email') Back to Email
+      a(href='/logout') Logout

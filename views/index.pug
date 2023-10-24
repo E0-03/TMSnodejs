@@ -1,0 +1,17 @@
+html
+  head 
+    title="Task Management System"
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet")
+  body 
+    div(class="container")
+      h2(class="pb-2 border-bottom")="Task Management System"
+      div(class="row mt-4")
+        div(class="col-md-4 offset-md-4")
+          form(action="/login", method="post")
+            div(class="mb-3")
+              label(for="username", class="form-label")="Username"
+              input(type="text", class="form-control", id="username", name="username", required)
+            div(class="mb-3")
+              label(for="password", class="form-label")="Password"
+              input(type="password", class="form-control", id="password", name="password", required)
+            button(type="submit", class="btn btn-primary")="Login"
